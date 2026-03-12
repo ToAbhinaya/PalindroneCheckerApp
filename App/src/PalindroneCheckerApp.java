@@ -1,16 +1,17 @@
-public class UseCase2PalindromeCheckerApp {
+public class UseCase3PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
+        // Original string
         String word = "madam";
         String reversed = "";
 
-        // Reverse the string
+        // Reverse string using for loop
         for (int i = word.length() - 1; i >= 0; i--) {
             reversed = reversed + word.charAt(i);
         }
 
-        // Check if palindrome
+        // Compare original and reversed string
         if (word.equals(reversed)) {
             System.out.println("The word \"" + word + "\" is a Palindrome.");
         } else {
